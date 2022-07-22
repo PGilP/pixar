@@ -1,0 +1,114 @@
+/* VARIABLES */
+:root{
+
+}
+/* FIN VARIABLES */
+
+/* CLASES GENERALES */
+*{
+    box-sizing: border-box;
+    font-family: 'Brandon';
+}
+
+body{
+    margin: 0;
+    margin-bottom: 1000px;
+}
+
+a{
+    text-decoration: none;
+    color: #1D1D1D;
+}
+
+.wrapper{
+    padding: 150px 142px;
+}
+/* FIN CLASES GENERALES */
+
+/* FUENTES */
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../fonts/BrandonGrotesque-Regular.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../fonts/BrandonGrotesque-Medium.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../fonts/BrandonGrotesque-Bold.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../fonts/BrandonGrotesque-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+/* FIN FUENTES */
+
+/* HEADER */
+
+header{
+    padding: 38px 142px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    width: 129px;
+    display: flex;
+}
+
+header .logo img{
+    width: 100%;
+    align-items: center;
+}
+
+header .links{
+    display: flex;
+    padding-right: 10px;
+}
+
+header .links .link-dropdown{
+    padding: 10px;
+}
+header .links .link-dropdown a{
+    padding: 8px 0;
+    margin: 0 10px;
+    font-size: 15px;
+    letter-spacing: .10em;
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+
+
+/* FIN MAIN */
+
+/* FOOTER */
+
+footer p, footer a{
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: .29em;
+    line-height: 1.7em;
+}
+
+footer .links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* FIN FOOTER */

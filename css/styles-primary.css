@@ -82,12 +82,31 @@ header .links{
 
 header .links .link-dropdown{
     padding: 10px;
+    position: relative;
 }
 header .links .link-dropdown a{
     padding: 8px 0;
     margin: 0 10px;
     font-size: 15px;
     letter-spacing: .10em;
+}
+
+header .links .list-dropdown{
+    display: none;
+    position: absolute;
+    background-color: #1d1d1d;
+    padding: 15px;
+    white-space: nowrap; /*IMPORTANTEEEEE!!!*/
+    margin-top: 10px;
+}
+
+header .links .list-dropdown a{
+    color: white;
+} 
+
+header .links .link-dropdown:hover .list-dropdown {
+    display: flex;
+    flex-direction: column;
 }
 
 /* FIN HEADER */
@@ -99,6 +118,15 @@ header .links .link-dropdown a{
 
 /* FOOTER */
 
+footer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
 footer p, footer a{
     font-weight: 200;
     font-size: 14px;
@@ -106,9 +134,51 @@ footer p, footer a{
     line-height: 1.7em;
 }
 
+footer .media ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    gap: 15px;
+}
+
+footer .media ul a{
+    padding: 0;
+    border: none;
+    width: 23px;
+    height: 23px;
+}
+
+footer .media ul a svg{
+    max-height: 23px;
+    max-width: 23px;
+    fill: #90909b;
+    transition: all .3s linear;
+}
+
+footer .media ul a svg:hover{
+    fill: #47475b;
+}
+
 footer .links{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .links a{
+    text-decoration: underline;
+    text-decoration-color: rgba(29,29,29,.3) ;
+}
+
+footer .links a:hover{
+    color: rgba(29,29,29,.6);
+    text-decoration-color: rgba(29,29,29,.15);
+}
+
+footer .links span{
+    margin: 0 4px;
 }
 
 /* FIN FOOTER */
